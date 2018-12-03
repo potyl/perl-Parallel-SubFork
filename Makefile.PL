@@ -13,7 +13,7 @@ WriteMakefile(
 		POSIX                 => 0,
 		Class::Accessor::Fast => 0,
 
-		# For testig purposes
+		# For testing purposes
 		Test::More            => 0,
 		Test::Pod             => 0,
 		IPC::SysV             => 0,
