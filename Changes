@@ -30,5 +30,4 @@ Revision history for Perl extension Parallel::SubFork.
 	- Formatted some white spaces in the LICENSE
 
 0.01  Sat Mar  8 09:13:14 2008
-	- original version; created by h2xs 1.23 with options
-		-XA -n Parallel::SubFork
+	- original version; created by h2xs 1.23 with options -XA -n Parallel::SubFork
