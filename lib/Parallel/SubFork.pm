@@ -36,7 +36,7 @@ or more easily:
 
 This module provides a simple wrapper over the module L<Parallel::SubFork::Task>
 which in turns simplifies the usage of the system calls C<fork> and C<waitpid>.
-The idea is to isolate the tasks to be execute in functions or closures and to
+The idea is to isolate the tasks to be executed in functions or closures and to
 execute them in a separated process in order to take advantage of
 parallelization.
 
@@ -47,7 +47,7 @@ different process. This module will take care of creating and managing the new
 processes. All that's left is to code the logic of each task and to provide the
 proper I<inter process communication> (IPC) mechanism if needed.
 
-A task will run in it's own process thus it's important to understand that all
+A task will run in its own process thus it's important to understand that all
 modifications to variables within the function, even global variables, will have
 no impact on the parent process. Communication or data exchange between the task
 and the dispatcher (the code that started the task) has to be performed through
@@ -163,7 +163,7 @@ sub new {
 =head2 start
 
 Starts the execution of a new task in a different process. A task consists of a
-code reference (a closure or a reference to a subroutine) and of an arguments
+code reference (a closure or a reference to a subroutine) and of an argument
 list.
 
 This method will actually fork a new process and execute the given code
